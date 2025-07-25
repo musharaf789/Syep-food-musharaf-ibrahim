@@ -1,19 +1,36 @@
 *{ 
-    margin: 100px;
-    padding: 100px;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
-
-   background-color □beige;rgb 
-   text align:center
-   line-height:2,1;
+body{
+   background-color:beige;
+   text-align:center;
+   line-height:2.1;
 }
 
-.hero img{"image.jpeg"
+.hero img{
     border- radius: 50;
 }
 
 .accent{
-    color:□blue(156,46,18)
+    color:blue;
 }
+@media screen (max-width: 768px){
+    body{background-colour:beige}
+}
+ .grid{
+    display: flex;
+    justify-content: center;
+    /*justify-content: space-around;*/
+    gap:15px;
+    flex-wrap:wrap;
+ }
 
+
+ .grid div{
+    background-colour:blue;
+    border-radius: 100px;
+    padding: 10px;
+    min-width: 80px;
+ }
