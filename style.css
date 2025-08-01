@@ -4,21 +4,29 @@
     box-sizing: border-box;
 }
 body{
-   background-color:beige;
+   background-color:solid beige;
    text-align:center;
    line-height:2.1;
 }
-
 .hero img{
-    border- radius: 50;
+    border-radius:50%;
 }
 
-.accent{
-    color:blue;
+img {
+    width: 300px;
+    height: auto;
 }
-@media screen (max-width: 768px){
-    body{background-colour:beige}
+.accent {
+    color: rgb(181,60,0);
+    font-style: italic;
+    font-weight:bold;
+
+}   @media screen{
+         (max-width: 768px) 
+        body(background-colour:beige)
 }
+
+
  .grid{
     display: flex;
     justify-content: center;
@@ -29,7 +37,7 @@ body{
 
 
  .grid div{
-    background-colour:blue;
+    background-color: rgb(240,255,255)
     border-radius: 100px;
     padding: 10px;
     min-width: 80px;
