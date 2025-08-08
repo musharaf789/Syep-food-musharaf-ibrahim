@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-   background-color:solid beige;
+   background-color:rgb(173,216,230);
    text-align:center;
    line-height:2.1;
 }
@@ -21,9 +21,10 @@ img {
     font-style: italic;
     font-weight:bold;
 
-}   @media screen{
-         (max-width: 768px) 
-        body(background-colour:beige)
+}  
+
+@media (max-width: 768px) {
+        body{background-color:rgb(235,220,140);}
 }
 
 
@@ -37,7 +38,7 @@ img {
 
 
  .grid div{
-    background-color: rgb(240,255,255)
+    background-color: rgb(240,255,255);
     border-radius: 100px;
     padding: 10px;
     min-width: 80px;
