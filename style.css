@@ -43,3 +43,13 @@ img {
     padding: 10px;
     min-width: 80px;
  }
+
+ #about {
+  border: 2px solid rgb(173,216,230);        /* Dark border around the section */
+  border-radius: 10px;           /* Rounded corners */
+  padding: 20px;                 /* Space inside the box */
+  margin: 20px auto;             /* Space outside, auto centers it */
+  max-width: 800px;              /* Keeps it from stretching too wide */
+  background-color: #f9f9f9;     /* Light background for contrast */
+
+}

@@ -1,8 +1,8 @@
 const review =[
 {
         id:1,
-        name: 'Susan Smith'
-        job: 'Scientist',
+        name: 'ms Maple',
+        job: 'teacher',
         img: '#',
         text:''
     },
