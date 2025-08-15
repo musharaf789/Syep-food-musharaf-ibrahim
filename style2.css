@@ -1,28 +1,4 @@
-const reviews = [
-    {
-        id: 1,
-            name: Susan smith',
-            job:"Teacher"
-            img:="#"
-            text: blah blah blah 
-        
 
-    },
-];
-    {
-        id 2,
-        name:"peter john"
-        img: "#"
-        text:blah 
-    },
-];
-    {
-        id: 3,
-        name: 'peter john'
-        job;"Teacher"
-        img: '#',
-        text:blah blah
-    }
 
 :const
 /*
@@ -58,8 +34,8 @@ Variables
  --clr-grey-1: hsl(209, 61%, 16%);
  --clr-grey-2: hsl(211, 39%, 23%);
  --clr-grey-3: hsl(209, 34%, 30%);
- --clr-g
-rey-4: hsl(209, 28%, 39%);
+ 
+   --clr-grey-4: hsl(209, 28%, 39%);
  /* grey used for paragraphs */
  --clr-grey-5: hsl(210, 22%, 49%);
  --clr-grey-6: hsl(209, 23%, 60%);
@@ -198,3 +174,4 @@ main {
 }
 .title {
  text-align: center;
+ body { font-family: 'Poppins', sans-serif; }

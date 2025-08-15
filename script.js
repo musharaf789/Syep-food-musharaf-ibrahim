@@ -1,57 +1,71 @@
+const review =[
 {
-        id 1,
+        id:1,
         name: 'Susan Smith'
+        job: 'Scientist',
         img: '#',
         text:''
     },
-];
-    {
-        id 2,
-        name: 'peter john'
-        job; "Teacher"
-        img: '#',
-        text:'blah blah blah'
-    },
-];
-    {
-        id 2,
-        name: 'peter john'
-        job; "Teacher"
-        img: '#',
-        text:'blah blah blah'
-    };
 
-:const img = document.getElementsByid("person-img");
-const author = document.getElementsByid ('job');
-const job = document.getElementsByid('job');
-const info = document.getElementsByid(info);
+  {
+    id: 2,
+    name: 'john doe',
+    job: 'Developer',
+    img: '#',
+    text: 'Sample text for John'
+  },
+  {
+    id: 3,
+    name: 'peter john',
+    job: 'Teacher',
+    img: '#',
+    text: 'blah blah blah'
+  }
+];
+const img = document.getElementById("person-img");
+const author = document.getElementById('author');
+const job = document.getElementById('job');
+const info = document.getElementById('info');
 
-const previts = document.getElementsByid('.prev-btn');
-const previts = document.getElementsByid('.next-btn');
+
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
 
 let currentItem = 0;
-//Load initial item
-window.addEventListener('DOMContestLoaded',)
-    const item = reviews[currentItem];
-    img, src = item.img;
-    author.textContet = item,text
 
+// Load initial item
+window.addEventListener('DOMContentLoaded', () => {
+  showPerson(currentItem);
+});
 
+// Show person based on index
+function showPerson(personIndex) {
+  const item = reviews[personIndex];
+  img.src = item.img;
+  author.textContent = item.name;
+  job.textContent = item.job;
+  info.textContent = item.text;
+}
 
-    
+// Show next person
+nextBtn.addEventListener('click', () => {
+  currentItem++;
+  if (currentItem > reviews.length - 1) {
+    currentItem = 0; // loop back to start
+  }
+  showPerson(currentItem);
+});
 
-    function showPerson(person(person){
-        const item = review[person];
-        img.src = item.img;
-        author.textContent = item.name
-        job.textContent = item.job;
-        info.textContent= item.item;
-
-    }
-
-
-    next.addEventListener(click', function (){
-        Current item
+// Show previous person
+prevBtn.addEventListener('click', () => {
+  currentItem--;
+  if (currentItem < 0) {
+    currentItem = reviews.length - 1; // loop back to last
+  }
+  showPerson(currentItem);
+});
+    {
+        
     }
 
 console.log("Hello World!");
@@ -94,43 +108,7 @@ document.getElementById("greeting").innerText = greeting;
 
 
 
-{
-        id 1,
-        name: 'Susan Smith'
-        img: '#',
-        text:''
-    },
-];
-    {
-        id 2,
-        name: 'peter john'
-        job; "Teacher"
-        img: '#',
-        text:'blah blah blah'
-    },
-];
-    {
-        id 2,
-        name: 'peter john'
-        job; "Teacher"
-        img: '#',
-        text:'blah blah blah'
-    };
 
-:const img = document.getElementsByid("person-img");
-const author = document.getElementsByid ('job');
-const job = document.getElementsByid('job');
-const info = document.getElementsByid(info);
-
-const previts = document.getElementsByid('.prev-btn');
-const previts = document.getElementsByid('.next-btn');
-
-let currentItem = 0;
-//Load initial item
-window.addEventListener('DOMContestLoaded',)
-    const item = reviews[currentItem];
-    img, src = item.img;
-    author.textContet = item,text
 
 
 
